@@ -1,12 +1,587 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old School Bodybuilding — Golden Era</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ======================== HEADER + NAV ======================== -->
+    <header class="site-header">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <span class="logo-icon">⚡</span>
+          <div class="logo-text">
+            <span class="logo-main">OLD SCHOOL</span>
+            <span class="logo-sub">BODYBUILDING</span>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#legends" class="nav-link">Legends</a></li>
+          <li><a href="#training" class="nav-link">Workouts</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#footer" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-search">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search legends..."
+          />
+          <button class="search-btn" aria-label="Search">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ======================== MAIN ======================== -->
+    <main>
+      <!-- ── HERO ── -->
+      <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Est. 1970 — The Golden Age</p>
+          <h1 class="hero-title">
+            <span class="hero-title-line">Golden Era</span>
+            <span class="hero-title-line accent">Legends</span>
+          </h1>
+          <p class="hero-subtitle">Strength · Discipline · Legacy</p>
+          <a href="#legends" class="cta-btn">
+            <span>Explore Legends</span>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </a>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>SCROLL</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ── CINEMATIC CAROUSEL (CSS-only via radio inputs) ── -->
+      <section class="carousel-section">
+        <div class="carousel-header">
+          <h2 class="section-title">THE ICONS</h2>
+          <div class="title-bar"></div>
+        </div>
+
+        <div class="carousel">
+          <!-- Radio controls — hidden, mas clicáveis via labels -->
+          <input
+            type="radio"
+            name="slide"
+            id="s1"
+            class="slide-radio"
+            checked
+          />
+          <input type="radio" name="slide" id="s2" class="slide-radio" />
+          <input type="radio" name="slide" id="s3" class="slide-radio" />
+
+          <!-- Slides -->
+          <div class="slides-wrapper">
+            <article class="carousel-slide slide-1">
+              <div class="slide-bg"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <span class="slide-number">01</span>
+                <h3 class="slide-name">Arnold Schwarzenegger</h3>
+                <p class="slide-era">Mr. Olympia — 1970–1975, 1980</p>
+                <p class="slide-quote">"The mind is the limit."</p>
+              </div>
+              <!-- Setas dentro do slide para o anterior/próximo -->
+              <label class="arrow arrow-prev" for="s3" aria-label="Anterior"
+                >&#8592;</label
+              >
+              <label class="arrow arrow-next" for="s2" aria-label="Próximo"
+                >&#8594;</label
+              >
+            </article>
+
+            <article class="carousel-slide slide-2">
+              <div class="slide-bg"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <span class="slide-number">02</span>
+                <h3 class="slide-name">Mike Mentzer</h3>
+                <p class="slide-era">Mr. Universe — 1978</p>
+                <p class="slide-quote">"Less is more. One set to failure."</p>
+              </div>
+              <label class="arrow arrow-prev" for="s1" aria-label="Anterior"
+                >&#8592;</label
+              >
+              <label class="arrow arrow-next" for="s3" aria-label="Próximo"
+                >&#8594;</label
+              >
+            </article>
+
+            <article class="carousel-slide slide-3">
+              <div class="slide-bg"></div>
+              <div class="slide-overlay"></div>
+              <div class="slide-content">
+                <span class="slide-number">03</span>
+                <h3 class="slide-name">Frank Zane</h3>
+                <p class="slide-era">Mr. Olympia — 1977–1979</p>
+                <p class="slide-quote">"Aesthetics over mass. Always."</p>
+              </div>
+              <label class="arrow arrow-prev" for="s2" aria-label="Anterior"
+                >&#8592;</label
+              >
+              <label class="arrow arrow-next" for="s1" aria-label="Próximo"
+                >&#8594;</label
+              >
+            </article>
+          </div>
+
+          <!-- Dots clicáveis -->
+          <div class="carousel-dots">
+            <label for="s1" class="dot" aria-label="Slide 1"></label>
+            <label for="s2" class="dot" aria-label="Slide 2"></label>
+            <label for="s3" class="dot" aria-label="Slide 3"></label>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── LAYOUT: CONTENT + SIDEBAR ── -->
+      <div class="content-wrapper">
+        <div class="main-content">
+          <!-- ── SECTION 1: FEATURED LEGENDS (CARDS) ── -->
+          <section id="legends" class="legends-section">
+            <div class="section-header">
+              <h2 class="section-title">Featured Legends</h2>
+              <div class="title-bar"></div>
+              <p class="section-desc">
+                The gods who forged iron into art during the Golden Era of
+                bodybuilding.
+              </p>
+            </div>
+
+            <div class="cards-grid">
+              <article class="legend-card">
+                <div class="card-img-wrap">
+                  <img
+                    src="https://m.media-amazon.com/images/I/61Xw5xD6noL._AC_UF894,1000_QL80_.jpg"
+                    alt="Arnold Schwarzenegger"
+                    loading="lazy"
+                  />
+                  <div class="card-overlay">
+                    <p class="card-overlay-text">
+                      7× Mr. Olympia. The undisputed king of the Golden Era. His
+                      legacy transcends bodybuilding.
+                    </p>
+                    <a href="#" class="card-cta">View Profile</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="card-badge">The Austrian Oak</span>
+                  <h3 class="card-name">Arnold Schwarzenegger</h3>
+                  <p class="card-desc">
+                    Mr. Olympia 1970–75, 1980. Transformed bodybuilding into a
+                    global phenomenon through sheer will and unmatched charisma.
+                  </p>
+                </div>
+              </article>
+
+              <article class="legend-card">
+                <div class="card-img-wrap">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    alt="Mike Mentzer"
+                    loading="lazy"
+                  />
+                  <div class="card-overlay">
+                    <p class="card-overlay-text">
+                      Pioneer of High-Intensity Training. The philosopher of the
+                      iron game. Perfect score at Mr. Universe.
+                    </p>
+                    <a href="#" class="card-cta">View Profile</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="card-badge">The Heavy Duty King</span>
+                  <h3 class="card-name">Mike Mentzer</h3>
+                  <p class="card-desc">
+                    First man to score a perfect 300 at Mr. Universe. His HIT
+                    philosophy revolutionized training science.
+                  </p>
+                </div>
+              </article>
+
+              <article class="legend-card">
+                <div class="card-img-wrap">
+                  <img
+                    src="https://thebarbell.com/wp-content/uploads/2023/02/Frank-Zane-workout.jpg"
+                    alt="Frank Zane"
+                    loading="lazy"
+                  />
+                  <div class="card-overlay">
+                    <p class="card-overlay-text">
+                      The Chemist. Master of symmetry, proportion and aesthetic
+                      perfection. 3× Mr. Olympia.
+                    </p>
+                    <a href="#" class="card-cta">View Profile</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="card-badge">The Chemist</span>
+                  <h3 class="card-name">Frank Zane</h3>
+                  <p class="card-desc">
+                    Mr. Olympia 1977–79. Proof that aesthetics and symmetry
+                    matter more than sheer mass.
+                  </p>
+                </div>
+              </article>
+
+              <article class="legend-card">
+                <div class="card-img-wrap">
+                  <img
+                    src="https://nutrata.com.br/wp-content/uploads/2023/03/Banner-Blog-1-scaled.jpg.webp"
+                    alt="Ronnie Coleman"
+                    loading="lazy"
+                  />
+                  <div class="card-overlay">
+                    <p class="card-overlay-text">
+                      8× Mr. Olympia. Carried the golden spirit into the modern
+                      era with legendary intensity.
+                    </p>
+                    <a href="#" class="card-cta">View Profile</a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <span class="card-badge">The GOAT</span>
+                  <h3 class="card-name">Ronnie Coleman</h3>
+                  <p class="card-desc">
+                    Eight consecutive Olympia titles. "Everybody wants to be a
+                    bodybuilder, but nobody wants to lift no heavy-ass weights."
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- ── SECTION 2: TRAINING PHILOSOPHY ── -->
+          <section id="training" class="training-section">
+            <div class="training-inner">
+              <div class="training-label">THE PHILOSOPHY</div>
+              <h2 class="training-title">Old School<br /><em>Mindset</em></h2>
+
+              <article class="philosophy-article">
+                <div class="philosophy-block">
+                  <span class="block-number">I</span>
+                  <div class="block-content">
+                    <h3>Iron Never Lies</h3>
+                    <p>
+                      Before machines, before supplements, before algorithms —
+                      there was the barbell. Golden Era athletes trained with
+                      raw iron in gritty, chalk-dusted gyms. No distractions, no
+                      phones. Just weight, will, and the mirror.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="philosophy-block">
+                  <span class="block-number">II</span>
+                  <div class="block-content">
+                    <h3>Mind-Muscle Mastery</h3>
+                    <p>
+                      Arnold preached the mental visualization of muscle
+                      contraction. Every rep was a conversation between mind and
+                      body. This psychological depth separated champions from
+                      contenders. The body follows where the mind leads.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="philosophy-block">
+                  <span class="block-number">III</span>
+                  <div class="block-content">
+                    <h3>Volume vs. Intensity</h3>
+                    <p>
+                      Two philosophies defined the era: Arnold's high-volume
+                      marathon sessions versus Mentzer's brutal, brief
+                      High-Intensity Training. Both demanded absolute
+                      commitment. The debate rages on — and both schools
+                      produced legends.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="philosophy-block">
+                  <span class="block-number">IV</span>
+                  <div class="block-content">
+                    <h3>Aesthetics as Art</h3>
+                    <p>
+                      The Golden Era was about sculpture. Waist-to-shoulder
+                      ratio. Symmetry. The V-taper. Frank Zane proved you could
+                      defeat bigger men through superior form. They didn't just
+                      build bodies — they created living art.
+                    </p>
+                  </div>
+                </div>
+              </article>
+
+              <div class="training-quote">
+                <blockquote>
+                  "The last three or four reps is what makes the muscle grow.
+                  This area of pain divides a champion from someone who is not a
+                  champion."
+                </blockquote>
+                <cite>— Arnold Schwarzenegger</cite>
+              </div>
+            </div>
+          </section>
+
+          <!-- ── SECTION 3: GALLERY ── -->
+          <section id="gallery" class="gallery-section">
+            <div class="section-header">
+              <h2 class="section-title">Gallery</h2>
+              <div class="title-bar"></div>
+            </div>
+
+            <div class="gallery-grid">
+              <div class="gallery-item gi-large">
+                <img
+                  src="https://images.unsplash.com/photo-1599058917212-d750089bc07e"
+                  alt="Golden Era Gym"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span>Golden Era Training</span>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e"
+                  alt="Iron Pumping"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay"><span>Pure Iron</span></div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
+                  alt="Posing"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span>The Art of Posing</span>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712"
+                  alt="Training"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay"><span>Dawn Sessions</span></div>
+              </div>
+
+              <div class="gallery-item gi-wide">
+                <img
+                  src="https://images.unsplash.com/photo-1605296867424-35fc25c9212a"
+                  alt="Stage"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span>Competition Stage</span>
+                </div>
+              </div>
+
+              <div class="gallery-item">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Barbell"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay"><span>Heavy Iron</span></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- /.main-content -->
+
+        <!-- ── SIDEBAR ── -->
+        <aside class="sidebar">
+          <div class="sidebar-widget">
+            <h4 class="widget-title">Top Legends</h4>
+            <ul class="legends-list">
+              <li class="legend-item">
+                <span class="legend-rank">01</span>
+                <span class="legend-name">Arnold Schwarzenegger</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-rank">02</span>
+                <span class="legend-name">Frank Zane</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-rank">03</span>
+                <span class="legend-name">Mike Mentzer</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-rank">04</span>
+                <span class="legend-name">Franco Columbu</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-rank">05</span>
+                <span class="legend-name">Lou Ferrigno</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-rank">06</span>
+                <span class="legend-name">Sergio Oliva</span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-rank">07</span>
+                <span class="legend-name">Ronnie Coleman</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget quote-widget">
+            <div class="quote-mark">"</div>
+            <p class="quote-text">
+              The pump is the greatest feeling you can get in the gym. Your
+              muscles get really tight, they fill up with blood. I get the same
+              feeling from pumping iron as I do from coming.
+            </p>
+            <span class="quote-author">— Arnold Schwarzenegger</span>
+            <span class="quote-label">Quote of the Day</span>
+          </div>
+
+          <div class="sidebar-widget profile-card">
+            <div class="profile-img-wrap">
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Legend of the Week"
+              />
+              <div class="profile-badge">Legend of the Week</div>
+            </div>
+            <h4 class="profile-name">Frank Zane</h4>
+            <p class="profile-title">The Chemist · Mr. Olympia</p>
+            <div class="profile-stats">
+              <div class="stat">
+                <span class="stat-num">3×</span>
+                <span class="stat-label">Olympia</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">185</span>
+                <span class="stat-label">lbs Peak</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">29"</span>
+                <span class="stat-label">Waist</span>
+              </div>
+            </div>
+            <a href="#" class="profile-btn">Full Bio</a>
+          </div>
+
+          <div class="sidebar-widget newsletter-widget">
+            <h4 class="widget-title">Iron Newsletter</h4>
+            <p>
+              Get weekly training wisdom from the Golden Era delivered to your
+              inbox.
+            </p>
+            <div class="newsletter-form">
+              <input
+                type="email"
+                placeholder="your@email.com"
+                class="newsletter-input"
+              />
+              <button class="newsletter-btn">JOIN</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- /.content-wrapper -->
+    </main>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer id="footer" class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">⚡</span>
+            <span>OLD SCHOOL BODYBUILDING</span>
+          </div>
+          <p class="footer-tagline">
+            Forged in Iron. Built on Discipline. Defined by Legacy.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+            <a href="#" class="social-link" aria-label="Twitter">TW</a>
+            <a href="#" class="social-link" aria-label="Facebook">FB</a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#legends">Legends</a></li>
+            <li><a href="#training">Workouts</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Era</h5>
+          <ul>
+            <li><a href="#">1970s Golden Age</a></li>
+            <li><a href="#">Venice Beach</a></li>
+            <li><a href="#">Mr. Olympia History</a></li>
+            <li><a href="#">Classic Routines</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="#">irontemple@oldschool.com</a></li>
+            <li><a href="#">Venice Beach, CA</a></li>
+            <li><a href="#">Submit a Legend</a></li>
+            <li><a href="#">Media & Press</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Old School Bodybuilding. All rights reserved.</p>
+        <p class="footer-motto">NO PAIN · NO GAIN · NO EXCUSES</p>
+      </div>
+    </footer>
+  </body>
 </html>

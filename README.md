@@ -22,10 +22,11 @@ The home page will be built using semantic HTML and styled with CSS, including s
 
 ## Print do(s) wireframe(s) criado
 
-> Sugestão, use o Excalidraw para isso. Utilize esse [template básico](https://excalidraw.com/#json=LU-8hwcQEwzk11FwO8Opo,qPU9K6cNUEzlXzwOuKMIlQ) para você começar.
-
 << COLOQUE A IMAGEM AQUI >>
+![Imagem 1](./public/img/Hero.png)
+![Imagem 2](./public/img/Main.png)
 
 ## Print da home-page criada
 
 << COLOQUE A IMAGEM AQUI >>
+![Imagem 2](./public/img/Hero.png)
