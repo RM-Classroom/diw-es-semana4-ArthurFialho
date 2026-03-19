@@ -29,4 +29,4 @@ The home page will be built using semantic HTML and styled with CSS, including s
 ## Print da home-page criada
 
 << COLOQUE A IMAGEM AQUI >>
-![Imagem 2](./public/img/Hero.png)
+![Imagem 2](./public/img/CurrentScreen.png)
