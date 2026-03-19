@@ -22,11 +22,9 @@ The home page will be built using semantic HTML and styled with CSS, including s
 
 ## Print do(s) wireframe(s) criado
 
-<< COLOQUE A IMAGEM AQUI >>
 ![Imagem 1](./public/img/Hero.png)
 ![Imagem 2](./public/img/Main.png)
 
 ## Print da home-page criada
 
-<< COLOQUE A IMAGEM AQUI >>
 ![Imagem 2](./public/img/CurrentScreen.png)
